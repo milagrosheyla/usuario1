@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información del Usuario</title>
+    <link rel="stylesheet" href="styl.css"> <!-- Enlace al archivo CSS -->
+</head>
+<body>
+
+<div class="user-container">
+    <h1>Buscar Usuario por ID</h1>
+    
+    <!-- Buscador -->
+    <div>
+        
+        <input type="number" id="searchId" placeholder="Ingresa el ID del usuario" min="1" max="10">
+        <button onclick="searchUser()">Buscar</button>
+    </div>
+
+    <!-- Información detallada del usuario -->
+    <div id="userInfo" style="display: none;">
+        <h2>Información del Usuario</h2>
+        <div>
+            <p><strong>ID:</strong> <span id="userId"></span></p>
+            <p><strong>Nombre:</strong> <span id="userName"></span></p>
+            <p><strong>Nombre de usuario:</strong> <span id="userUsername"></span></p>
+            <p><strong>Correo Electrónico:</strong> <span id="userEmail"></span></p>
+        </div>
+        
+        <h3>Dirección</h3>
+        <table>
+            <tr>
+                <th>Calle</th>
+                <td><span id="userStreet"></span></td>
+            </tr>
+            <tr>
+                <th>Suite</th>
+                <td><span id="userSuite"></span></td>
+            </tr>
+            <tr>
+                <th>Ciudad</th>
+                <td><span id="userCity"></span></td>
+            </tr>
+            <tr>
+                <th>Código Postal</th>
+                <td><span id="userZipcode"></span></td>
+            </tr>
+            <tr>
+                <th>Latitud</th>
+                <td><span id="userLat"></span></td>
+            </tr>
+            <tr>
+                <th>Longitud</th>
+                <td><span id="userLng"></span></td>
+            </tr>
+        </table>
+    
+        <h3>Teléfono</h3>
+        <p><span id="userPhone"></span></p>
+    
+        <h3>Sitio Web</h3>
+        <p><span id="userWebsite"></span></p>
+    
+        <h3>Compañía</h3>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <td><span id="userCompanyName"></span></td>
+            </tr>
+            <tr>
+                <th>Frase</th>
+                <td><span id="userCompanyCatchPhrase"></span></td>
+            </tr>
+            <tr>
+                <th>BS</th>
+                <td><span id="userCompanyBS"></span></td>
+            </tr>
+        </table>
+    </div>
+    
+
+<script src="user.js"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+</html>
